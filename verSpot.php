@@ -64,6 +64,12 @@ include './TEMPLATE/nav.php';
 <input type="hidden" id="lat" value="<?= $lat ?>">
 <input type="hidden" id="lon" value="<?= $lon ?>">
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="wrapper">
     <div class="container-fluid">
@@ -75,39 +81,39 @@ include './TEMPLATE/nav.php';
         <?php
         if (empty($_SESSION["id"])) {
             ?>
-        <div class="form-group">
-            <p>
-            <h1>
-                <?php
+            <div class="form-group">
+                <p>
+                <h1>
+                    <?php
 
                     echo $row["Nombre"]; ?>
-            </h1>
-            </p>
-        </div>
-        <?php
-        } else {
-            ?>
-        <div class="form-group d-flex justify-content-between">
-
-            <h1>
-                <?= $row["Nombre"]; ?>
-            </h1>
-            <!-- Button trigger modal -->
-            <button type="button"
-                class="btn btn-dark align-items-middle align-items-center justify-content-center my-auto"
-                data-toggle="modal" data-target="#exampleModalCenter">
-                Votar
-            </button>
-            <!-- Vertically centered modal -->
-            <div class="modal-dialog modal-dialog-centered">
-                ...
-            </div>
-
-            <!-- Vertically centered scrollable modal -->
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                ...
+                </h1>
+                </p>
             </div>
             <?php
+        } else {
+            ?>
+            <div class="form-group d-flex justify-content-between">
+
+                <h1>
+                    <?= $row["Nombre"]; ?>
+                </h1>
+                <!-- Button trigger modal -->
+                <button type="button"
+                    class="btn btn-dark align-items-middle align-items-center justify-content-center my-auto"
+                    data-toggle="modal" data-target="#exampleModalCenter">
+                    Votar
+                </button>
+                <!-- Vertically centered modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                    ...
+                </div>
+
+                <!-- Vertically centered scrollable modal -->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    ...
+                </div>
+                <?php
         }
         ?>
             <div class="form-group">
