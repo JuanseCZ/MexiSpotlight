@@ -34,7 +34,7 @@ function enviar_contacto() {
 `;
 
   Email.send({
-    SecureToken: "91a3c1cc-9eb3-4b65-8919-9eac9dbd2ae7",
+    SecureToken: "SCURE_TOKEN",
     To: "mexispotlight@gmail.com", //Este correo puede ser cambiado para ser enviado a otro correo y hacer pruebas
     From: "mexispotlight@gmail.com",
     Subject: `${subject.value} - ${fname.value}`,
@@ -86,7 +86,7 @@ function newsletter_notification(nombre, email) {
     </html>
 `;
   Email.send({
-    SecureToken: "91a3c1cc-9eb3-4b65-8919-9eac9dbd2ae7",
+    SecureToken: "SECURE_TOKEN",
     To: email, //Este correo puede ser cambiado para ser enviado a otro correo y hacer pruebas
     From: "mexispotlight@gmail.com",
     Subject: subject,
